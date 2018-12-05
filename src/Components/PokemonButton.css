@@ -11,7 +11,7 @@ position: relative;
   left: -50%;
 	border-radius: 100%;
 	background-color: #DA1213;
-  background-image: url("/pokeball.png");
+  background-image: url("/ReactPokedex/pokeball.png");
   background-size:cover;
 	cursor: pointer;
 	display: flex;
