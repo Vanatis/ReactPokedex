@@ -1,0 +1,33 @@
+@media (min-width: 960px)
+.layout-header {
+  border-radius: 4px;
+}
+
+.layout-header {
+  background: #404a62;
+  display:flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 6px #242d44;
+  max-width: 960px;
+  border-radius: 4px;
+  margin: auto;
+}
+
+input[type=search] {
+  background: #242d44;
+  color: #fefefe;
+  border: 0;
+  border-radius: 4px;
+  padding: 4px 6px;
+  min-width: 300px;
+}
+
+.search-button {
+  background: none;
+  color: #fefefe;
+  margin-left: -20px;
+  border: none;
+  padding: 0;
+}

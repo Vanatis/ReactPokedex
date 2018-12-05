@@ -1,0 +1,91 @@
+.pokemon-single-container {
+  width: 22%;
+  min-width: 200px;
+  font-family: 'Anton', sans-serif;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: #27282b;
+  color: #dfd9cf;
+  margin: 10px;
+  padding: 5px;
+  border-radius: 3px;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+.pokemon-single-container:hover {
+  cursor: pointer;
+  background-color: #494a4f;
+}
+
+.pokemon-single-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 200px;
+  position: relative;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.align-bottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding-bottom: 8px;
+}
+
+.pokemon-single-body {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 5px;
+  padding-top: 30px;
+  overflow: hidden;
+  text-align: center;
+}
+
+.evolution-chain-container {
+  display: flex;
+  flex-flow: row wrap;
+  width: 100%;
+}
+
+.evolution-chain-title {
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+.evolution-stage-container {
+  position: relative;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.evolution-stage-container:hover {
+  background-color: #b4b4b4;
+}
+
+.evolution-stage-text {
+  position: absolute;
+  top: -50px;
+}
+
+.evolution-stage-img {
+  transition: all .2s ease-in-out;
+}
+.evolution-stage-img:hover {
+  transform: scale(1.2);
+}
+
+
+.pokemon-front-back-img {
+  max-width: 50%;
+}

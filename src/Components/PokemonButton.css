@@ -1,0 +1,70 @@
+.circular-button-container {
+  position: fixed;
+  bottom: 10px;
+  left: 50%;
+}
+
+.main-circular-button {
+position: relative;
+	width: 64px;
+	height: 64px;
+  left: -50%;
+	border-radius: 100%;
+	background-color: #DA1213;
+  background-image: url("/pokeball.png");
+  background-size:cover;
+	cursor: pointer;
+	display: flex;
+	justify-content : center;
+	align-items: center;
+  z-index: 102;
+}
+
+.child-circular-button {
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+  font-family: 'Anton', sans-serif;
+  font-size: 0.9em;
+	width: 50px;
+	height: 50px;
+	border-radius: 100%;
+	background-color: #770302;
+  background-size:cover;
+  background-image: url("/pokeball.png");
+  border: 2px #000 solid;
+	cursor: pointer;
+	box-shadow: rgba(0, 0, 0, 0.2) 0px 1px 3px;
+	color: #dfd9cf;
+  z-index: 101;
+}
+
+.child-circular-button:hover {
+  background-color: #DA1213;
+  transition: transform 0.2s ease-in-out;
+  transform: scale(1.2) !important;
+}
+
+.button-active {
+  background-color: #DA1213;
+}
+
+.fullscreen-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 100;
+}
+
+.circular-button-border {
+  position: fixed;
+  width: 100%;
+  height: 40px;
+  left: 0;
+  bottom: 0px;
+  background-color: #DA1213;
+}
