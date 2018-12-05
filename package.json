@@ -2,7 +2,7 @@
   "name": "pokedex",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://vanatis.github.io/pokedex",
+  "homepage": "https://vanatis.github.io/ReactPokedex",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.8",
     "@fortawesome/free-brands-svg-icons": "^5.5.0",
