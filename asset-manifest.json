@@ -1,15 +1,15 @@
 {
-  "main.css": "/pokedex/static/css/main.fb82b64a.chunk.css",
-  "main.js": "/pokedex/static/js/main.0b5c32df.chunk.js",
-  "main.js.map": "/pokedex/static/js/main.0b5c32df.chunk.js.map",
-  "static/css/1.da7c92ac.chunk.css": "/pokedex/static/css/1.da7c92ac.chunk.css",
-  "static/js/1.fc6f2268.chunk.js": "/pokedex/static/js/1.fc6f2268.chunk.js",
-  "static/js/1.fc6f2268.chunk.js.map": "/pokedex/static/js/1.fc6f2268.chunk.js.map",
-  "runtime~main.js": "/pokedex/static/js/runtime~main.69bab70d.js",
-  "runtime~main.js.map": "/pokedex/static/js/runtime~main.69bab70d.js.map",
-  "static/css/1.da7c92ac.chunk.css.map": "/pokedex/static/css/1.da7c92ac.chunk.css.map",
-  "static/css/main.fb82b64a.chunk.css.map": "/pokedex/static/css/main.fb82b64a.chunk.css.map",
-  "index.html": "/pokedex/index.html",
-  "precache-manifest.16a2e7fc08b927bf1d4a7c14f4a11068.js": "/pokedex/precache-manifest.16a2e7fc08b927bf1d4a7c14f4a11068.js",
-  "service-worker.js": "/pokedex/service-worker.js"
+  "main.css": "/ReactPokedex/static/css/main.fb82b64a.chunk.css",
+  "main.js": "/ReactPokedex/static/js/main.c0b79015.chunk.js",
+  "main.js.map": "/ReactPokedex/static/js/main.c0b79015.chunk.js.map",
+  "static/css/1.da7c92ac.chunk.css": "/ReactPokedex/static/css/1.da7c92ac.chunk.css",
+  "static/js/1.fc6f2268.chunk.js": "/ReactPokedex/static/js/1.fc6f2268.chunk.js",
+  "static/js/1.fc6f2268.chunk.js.map": "/ReactPokedex/static/js/1.fc6f2268.chunk.js.map",
+  "runtime~main.js": "/ReactPokedex/static/js/runtime~main.6d2032cb.js",
+  "runtime~main.js.map": "/ReactPokedex/static/js/runtime~main.6d2032cb.js.map",
+  "static/css/1.da7c92ac.chunk.css.map": "/ReactPokedex/static/css/1.da7c92ac.chunk.css.map",
+  "static/css/main.fb82b64a.chunk.css.map": "/ReactPokedex/static/css/main.fb82b64a.chunk.css.map",
+  "index.html": "/ReactPokedex/index.html",
+  "precache-manifest.971d938cc4f7b1db6995844226b250c6.js": "/ReactPokedex/precache-manifest.971d938cc4f7b1db6995844226b250c6.js",
+  "service-worker.js": "/ReactPokedex/service-worker.js"
 }
