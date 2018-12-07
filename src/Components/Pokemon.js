@@ -123,19 +123,18 @@ class Pokemon extends Component {
               }
             )}
           </div>
-          <div className="w-100">
+          <div className="pokemon-front-back-container">
             <p className="w-100">Front - Back</p>
-
-            <LazyLoad>
+            <LazyLoad
+              className="pokemon-front-back-lazyload">
               <img
-                className="pokemon-front-back-img"
                 alt={`${pokemon}front`}
                 src={`http://pokestadium.com/sprites/xy/${pokemon}.gif`}
               />
             </LazyLoad>
-            <LazyLoad>
+            <LazyLoad
+              className="pokemon-front-back-lazyload">
               <img
-                className="pokemon-front-back-img"
                 alt={`${pokemon}back`}
                 src={`http://pokestadium.com/sprites/xy/back/${pokemon}.gif`}
               />
@@ -159,7 +158,9 @@ class Pokemon extends Component {
     return (
       <div className={singleBodyClassName} onClick={() => this.handleClick(pokemon)}>
         <div className="pokemon-single-header">
-          <LazyLoad>
+          <LazyLoad
+            className="pokemon-single-header-lazyload"
+            debounce={false}>
             <img
               className="sprites"
               alt={this.props.pokemon}

@@ -6,7 +6,7 @@
   align-items: center;
   box-shadow: 0 0 6px #242d44;
   max-width: 960px;
-  border-radius: 4px;
+  border-radius: 0px;
   margin: auto;
 }
 
@@ -25,4 +25,10 @@ input[type=search] {
   margin-left: -20px;
   border: none;
   padding: 0;
+}
+
+@media screen and (min-width: 600px) {
+  .layout-header {
+    border-radius: 4px;
+  }
 }
