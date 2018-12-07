@@ -28,6 +28,10 @@ class PokemonList extends Component {
     });
   }
 
+  shouldComponentUpdate(nextProps, nextState) {
+    return true;
+  }
+
   render() {
     let { pokemons, generation } = this.state;
     if (generation === "Kanto") {

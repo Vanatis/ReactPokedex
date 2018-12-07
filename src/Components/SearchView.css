@@ -1,8 +1,3 @@
-@media (min-width: 960px)
-.layout-header {
-  border-radius: 4px;
-}
-
 .layout-header {
   background: #404a62;
   display:flex;

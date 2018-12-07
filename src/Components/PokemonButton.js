@@ -31,6 +31,10 @@ class PokemonButton extends Component {
     this.closeMenu = this.closeMenu.bind(this);
   }
 
+  shouldComponentUpdate(nextProps, nextState) {
+    return true;
+  }
+
   componentDidMount() {
     window.addEventListener('click', this.closeMenu);
   }

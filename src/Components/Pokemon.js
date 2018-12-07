@@ -1,6 +1,8 @@
 import React, {Component} from 'react';
 import {Collapse} from 'react-collapse';
 import {presets} from 'react-motion';
+import LazyLoad from 'react-lazy-load';
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 import Pokedex from 'pokedex-promise-v2';
@@ -15,6 +17,7 @@ class Pokemon extends Component {
       pokemonSpecies: null,
       pokemonEvolutionChain: null,
       bPokemonDataPending: false,
+      bIsLoaded: false,
     };
     this.handleClick = this.handleClick.bind(this);
   }
@@ -66,7 +69,6 @@ class Pokemon extends Component {
   render() {
     let pokemon = this.props.pokemon;
     pokemon = this.fixNameException(pokemon);
-
     const { pokemonData, pokemonSpecies, pokemonEvolutionChain, bShowData } = this.state;
 
     //Flavor text
@@ -99,19 +101,21 @@ class Pokemon extends Component {
             {
               pokemonEvolutionChain.map((evolutionStage, indexEvolutionChain) => {
                 return (
-                  <div className={`w-${evolutionChainWidth} evolution-stage-container`} key={indexEvolutionChain}>
+                  <div className={`w-${evolutionChainWidth} evolution-stage-container`}
+                    key={`${indexEvolutionChain}-${pokemonData["id"]}`}>
                     <div className="evolution-stage-text w-100">
                       <p>Stage {indexEvolutionChain + 1}</p>
                     </div>
                     {evolutionStage.map((evolution, indexEvolutionStage) => {
                       let evolutionNameFix = this.fixNameException(evolution["species"]["name"]);
                       return (
-                        <img
-                          className="sprite evolution-stage-img"
-                          key={`{indexEvolutionChain} - {indexEvolutionStage}`}
-                          alt={`${evolution["species"]["name"]}`}
-                          src={`http://pokestadium.com/sprites/xy/${evolutionNameFix}.gif`}
-                        />
+                        <LazyLoad key={`${indexEvolutionChain}-${indexEvolutionStage}-${pokemonData["id"]}`}>
+                          <img
+                            className="sprite evolution-stage-img"
+                            alt={`${evolution["species"]["name"]}`}
+                            src={`http://pokestadium.com/sprites/xy/${evolutionNameFix}.gif`}
+                          />
+                        </LazyLoad>
                       )
                     })}
                   </div>
@@ -122,16 +126,20 @@ class Pokemon extends Component {
           <div className="w-100">
             <p className="w-100">Front - Back</p>
 
-            <img
-              className="pokemon-front-back-img"
-              alt={`${pokemon}front`}
-              src={`http://pokestadium.com/sprites/xy/${pokemon}.gif`}
-            />
-            <img
-              className="pokemon-front-back-img"
-              alt={`${pokemon}back`}
-              src={`http://pokestadium.com/sprites/xy/back/${pokemon}.gif`}
-            />
+            <LazyLoad>
+              <img
+                className="pokemon-front-back-img"
+                alt={`${pokemon}front`}
+                src={`http://pokestadium.com/sprites/xy/${pokemon}.gif`}
+              />
+            </LazyLoad>
+            <LazyLoad>
+              <img
+                className="pokemon-front-back-img"
+                alt={`${pokemon}back`}
+                src={`http://pokestadium.com/sprites/xy/back/${pokemon}.gif`}
+              />
+            </LazyLoad>
           </div>
 
         </div>
@@ -151,11 +159,13 @@ class Pokemon extends Component {
     return (
       <div className={singleBodyClassName} onClick={() => this.handleClick(pokemon)}>
         <div className="pokemon-single-header">
-          <img
-            className="sprites"
-            alt={this.props.pokemon}
-            src={`http://pokestadium.com/sprites/xy/${pokemon}.gif`}
-          />
+          <LazyLoad>
+            <img
+              className="sprites"
+              alt={this.props.pokemon}
+              src={`http://pokestadium.com/sprites/xy/${pokemon}.gif`}
+            />
+          </LazyLoad>
           <div className="align-bottom">{pokemon}</div>
         </div>
 
