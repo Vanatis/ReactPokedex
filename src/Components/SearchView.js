@@ -17,12 +17,7 @@ const SearchView = ({ searchfield, searchChange, searchClick }) => {
             id="search"
             onChange={searchChange}
           />
-          <button
-            className="search-button"
-            onClick={searchClick}
-          >
-            <FontAwesomeIcon icon="search" />
-          </button>
+          <FontAwesomeIcon icon="search" />
         </div>
       </div>
     </div>
