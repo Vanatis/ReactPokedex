@@ -8,18 +8,16 @@ const SearchView = ({ searchfield, searchChange, searchClick }) => {
       <div className="layout-header">
         <h2 className=" pa2 ma0">Search Pokémon</h2>
         <div className="pa2">
+          <label htmlFor="search" style={{display: 'none'}}>Search</label>
           <input
             className="search-input"
             type="search"
             placeholder="Search by name"
+            aria-label="Search"
+            id="search"
             onChange={searchChange}
           />
-          <button
-            className="search-button"
-            onClick={searchClick}
-          >
-            <FontAwesomeIcon icon="search" />
-          </button>
+          <FontAwesomeIcon icon="search" />
         </div>
       </div>
     </div>

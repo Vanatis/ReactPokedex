@@ -31,6 +31,10 @@ class PokemonButton extends Component {
     this.closeMenu = this.closeMenu.bind(this);
   }
 
+  shouldComponentUpdate(nextProps, nextState) {
+    return true;
+  }
+
   componentDidMount() {
     window.addEventListener('click', this.closeMenu);
   }
@@ -50,8 +54,12 @@ class PokemonButton extends Component {
 
   onChildButtonClick(event, index) {
     event.stopPropagation();
-    this.setState({ active: index });
-    this.props.onGenerationChange(this.state.childButtons[index]);
+
+    if (index !== this.state.active) {
+      this.setState({ active: index });
+      this.props.onGenerationChange(this.state.childButtons[index]);
+      window.scrollTo(0, 0);
+    }
     this.closeMenu();
   }
 

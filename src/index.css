@@ -6,3 +6,72 @@ body {
   font-weight: bold;
   background: #242d44;
 }
+
+img {
+  border-style: none;
+  max-width: 100%
+}
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+button, input, optgroup, select, textarea {
+  font-family: 'Overwatch', sans-serif;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+}
+
+button, input {
+  overflow: visible;
+}
+
+button, select {
+  text-transform: none;
+}
+
+[type=search] {
+    -webkit-appearance: textfield;
+    outline-offset: -2px
+}
+
+[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration {
+    -webkit-appearance: none
+}
+
+.border-box,a,article,body,code,dd,div,dl,dt,fieldset,footer,form,h1,h2,h3,h4,h5,h6,header,html,input[type=email],input[type=number],input[type=password],input[type=tel],input[type=text],input[type=url],legend,li,main,ol,p,pre,section,table,td,textarea,th,tr,ul {
+    box-sizing: border-box
+}
+
+.w-25 {
+    width: 25%
+}
+
+.w-33 {
+    width: 33%
+}
+
+.w-50 {
+    width: 50%
+}
+
+.w-100 {
+    width: 100%
+}
+
+.pa2 {
+    padding: .5rem
+}
+
+.ma0 {
+    margin: 0
+}
+
+.tc {
+    text-align: center
+}
+
+.f1 {
+    font-size: 3rem
+}

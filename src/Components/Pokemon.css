@@ -18,7 +18,7 @@
   background-color: #494a4f;
 }
 
-.pokemon-single-header {
+.pokemon-single-header, .pokemon-single-header-lazyload {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -28,6 +28,7 @@
   text-transform: uppercase;
   text-align: center;
 }
+
 
 .align-bottom {
   position: absolute;
@@ -85,7 +86,14 @@
   transform: scale(1.2);
 }
 
+.pokemon-front-back-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
 
-.pokemon-front-back-img {
+.pokemon-front-back-lazyload {
   max-width: 50%;
 }
