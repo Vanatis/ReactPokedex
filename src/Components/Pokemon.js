@@ -19,7 +19,7 @@ class Pokemon extends Component {
     this.handleClick = this.handleClick.bind(this);
   }
 
-  handleClick(pokemon) {
+  handleClick() {
     //Load only once per pokemon
     if (!this.state.bPokemonDataPending && this.state.pokemonData === null) {
       this.setState({bPokemonDataPending: true});
@@ -149,7 +149,7 @@ class Pokemon extends Component {
     let singleBodyClassName = "pokemon-single-container";
     if (bShowData) { singleBodyClassName += " w-100"};
     return (
-      <div className={singleBodyClassName} onClick={() => this.handleClick(pokemon)}>
+      <div className={singleBodyClassName} onClick={() => this.handleClick()}>
         <div className="pokemon-single-header">
           <img
             className="sprites"
