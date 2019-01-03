@@ -1,5 +1,4 @@
 import React from "react";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import './SearchView.css';
 
 const SearchView = ({ searchfield, searchChange, searchClick }) => {
@@ -17,7 +16,6 @@ const SearchView = ({ searchfield, searchChange, searchClick }) => {
             id="search"
             onChange={searchChange}
           />
-          <FontAwesomeIcon icon="search" />
         </div>
       </div>
     </div>
