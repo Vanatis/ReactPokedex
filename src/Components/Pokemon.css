@@ -18,6 +18,18 @@
   background-color: #494a4f;
 }
 
+.pokemon-type {
+  height: 20px;
+  border-radius: 4px;
+  margin: 8px;
+  text-align: center;
+}
+
+.pokemon-type-text {
+  color: #DDD;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
 .pokemon-single-header, .pokemon-single-header-lazyload {
   display: flex;
   align-items: center;
@@ -28,7 +40,6 @@
   text-transform: uppercase;
   text-align: center;
 }
-
 
 .align-bottom {
   position: absolute;
