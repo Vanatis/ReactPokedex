@@ -87,8 +87,10 @@ class Pokemon extends Component {
         <div className="pokemon-single-body">
           <div className="w-100">
             <p>#{pokemonData["id"]}</p>
-            <p>Height: {pokemonData["height"]}</p>
-            <p>Weight: {pokemonData["weight"]}</p>
+            <p>
+            Height: {pokemonData["height"]} <br />
+            Weight: {pokemonData["weight"]}
+            </p>
           </div>
           <div className="w-100">
             <p>{textEntries[0]["flavor_text"]}</p>
