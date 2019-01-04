@@ -10,11 +10,11 @@ This application has been developed as a progressive webapp.
 Go to the [Pokédex Website](https://vanatis.github.io/ReactPokedex) and add it to your homescreen.
 
 ## API
-All pokemon information is received by using the [pokeapi](https://pokeapi.co/).
+All Pokémon information is received by using the [pokeapi](https://pokeapi.co/).
 It's a great source for all pokémon related information!
 
 ## Sprites
 The animated Pokémon sprites are provided by [pokestadium](http://pokestadium.com).
 
-## Visit
+## Demo
 - https://vanatis.github.io/ReactPokedex
