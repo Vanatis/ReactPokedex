@@ -1,0 +1,17 @@
+.pokemon-type-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.pokemon-type-box {
+  border-radius: 4px;
+  margin: 5px;
+}
+
+.pokemon-type-text {
+  color: #DDD;
+  margin: 0;
+  padding: 5px 25px;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}

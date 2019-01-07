@@ -6,10 +6,10 @@ import ErrorBoundry from '../Components/ErrorBoundry';
 import './App.css';
 
 import { library } from '@fortawesome/fontawesome-svg-core';
-import { faTimes, faSpinner, faDesktop, faSearch } from '@fortawesome/free-solid-svg-icons';
+import { faTimes, faSpinner, faDesktop, faSearch, faChevronCircleUp, faChevronCircleDown } from '@fortawesome/free-solid-svg-icons';
 import { fab } from '@fortawesome/free-brands-svg-icons';
 
-library.add(faTimes, faSpinner, faDesktop, faSearch, fab);
+library.add(faTimes, faSpinner, faDesktop, faSearch, faChevronCircleUp, faChevronCircleDown, fab);
 
 class App extends Component {
   constructor() {

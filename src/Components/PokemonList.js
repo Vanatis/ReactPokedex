@@ -25,6 +25,9 @@ class PokemonList extends Component {
       this.setState({
         pokemons: response.results
       });
+    })
+    .catch(error => {
+      console.log("There was an ERROR:", error);
     });
   }
 

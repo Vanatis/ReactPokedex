@@ -1,0 +1,35 @@
+.evolution-chain-container {
+  display: flex;
+  flex-flow: row wrap;
+  width: 100%;
+}
+
+.evolution-chain-title {
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+.evolution-stage-container {
+  position: relative;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.evolution-stage-container:hover {
+  background-color: #b4b4b4;
+}
+
+.evolution-stage-text {
+  position: absolute;
+  top: -50px;
+}
+
+.evolution-stage-img {
+  transition: all .2s ease-in-out;
+}
+.evolution-stage-img:hover {
+  transform: scale(1.2);
+}

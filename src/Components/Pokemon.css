@@ -8,26 +8,13 @@
   background-color: #27282b;
   color: #dfd9cf;
   margin: 10px;
-  padding: 5px;
   border-radius: 3px;
   box-shadow: 0 1px 5px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
 }
 
-.pokemon-single-container:hover {
-  cursor: pointer;
-  background-color: #494a4f;
-}
-
-.pokemon-type {
-  height: 20px;
-  border-radius: 4px;
-  margin: 8px;
-  text-align: center;
-}
-
-.pokemon-type-text {
-  color: #DDD;
-  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+.pokemon-single-container-open {
+  width: 100%;
+  margin: 10px 20px;
 }
 
 .pokemon-single-header, .pokemon-single-header-lazyload {
@@ -41,7 +28,7 @@
   text-align: center;
 }
 
-.align-bottom {
+.pokemon-name {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -49,52 +36,17 @@
   padding-bottom: 8px;
 }
 
-.pokemon-single-body {
-  display: flex;
-  flex-flow: column wrap;
-  align-items: center;
-  justify-content: center;
+.pokemon-expand {
   width: 100%;
-  padding: 5px;
-  padding-top: 30px;
-  overflow: hidden;
+  height: 30px;
+  border-radius: 4px;
   text-align: center;
+  padding: 7px 0px;
+  cursor: pointer;
 }
 
-.evolution-chain-container {
-  display: flex;
-  flex-flow: row wrap;
-  width: 100%;
-}
-
-.evolution-chain-title {
-  width: 100%;
-  margin-bottom: 50px;
-}
-
-.evolution-stage-container {
-  position: relative;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-}
-
-.evolution-stage-container:hover {
-  background-color: #b4b4b4;
-}
-
-.evolution-stage-text {
-  position: absolute;
-  top: -50px;
-}
-
-.evolution-stage-img {
-  transition: all .2s ease-in-out;
-}
-.evolution-stage-img:hover {
-  transform: scale(1.2);
+.pokemon-expand:hover {
+  background-color: #494a4f;
 }
 
 .pokemon-front-back-container {
