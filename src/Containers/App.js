@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import PokemonList from '../Components/PokemonList';
-import SearchView from '../Components/SearchView';
+import FilterView from '../Components/FilterView';
+//import FuzzySearchView from '../Components/FuzzySearchView';
 import ErrorBoundry from '../Components/ErrorBoundry';
 
 import './App.css';
@@ -15,25 +16,37 @@ class App extends Component {
   constructor() {
     super()
     this.state = {
-      searchfield: ''
+      filterField: '',
+      typefilter: [],
+      pokemons: [],
     }
   }
 
-  onSearchChange = (event) => {
-    this.setState({ searchfield: event.target.value })
+  onFilterChange = (event) => {
+    this.setState({ filterField: event.target.value })
   }
 
-  onSearchClick = (event) => {
+  /*
+  onFuzzySearch = (event) => {
+    this.setState({ searchfield: event.name});
   }
+  */
 
   render() {
     return (
       <div>
         <h1 className='f1 tc'>Pokédex</h1>
-        <SearchView searchChange={this.onSearchChange} searchClick={this.onSearchClick} />
+          <FilterView filterChange={this.onFilterChange}/>
           <ErrorBoundry>
-            <PokemonList searchfield={this.state.searchfield}/>
+            <PokemonList filterField={this.state.filterField}/>
           </ErrorBoundry>
+
+          {/*
+          {this.state.pokemons.length > 0 ?
+            <FuzzySearchView onSearchChange={this.onSearchChange} onFuzzySearch={this.onFuzzySearch} pokemons={this.state.pokemons}/> :
+            null
+          }
+          */}
       </div>
     );
   }

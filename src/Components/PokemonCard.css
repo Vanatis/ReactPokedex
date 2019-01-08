@@ -60,3 +60,13 @@
 .pokemon-front-back-lazyload {
   max-width: 50%;
 }
+
+.rotating-button-close {
+  transition: transform .5s;
+  transform: rotate(0deg);
+}
+
+.rotating-button-open {
+  transition: transform .5s;
+  transform: rotate(180deg);
+}

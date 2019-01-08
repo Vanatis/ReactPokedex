@@ -1,0 +1,8 @@
+.menu-button-container {
+  min-width: 40px;
+  max-width: 150px;
+  height: 60px;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 6px;
+}

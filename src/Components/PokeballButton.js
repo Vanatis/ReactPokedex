@@ -1,9 +1,9 @@
 import React, {Component} from 'react';
 import {Motion, StaggeredMotion, spring} from 'react-motion';
 
-import './PokemonButton.css'
+import './PokeballButton.css'
 
-class PokemonButton extends Component {
+class PokeballButton extends Component {
   constructor(props) {
     super(props);
 
@@ -70,8 +70,8 @@ class PokemonButton extends Component {
       {rotate: spring(-360, {stiffness: 500, damping: 30})};
 
     return (
-      <div className="circular-button-border">
-        <div className="circular-button-container">
+      <div className="circular-button-container">
+        <div className="circular-button">
           {this.renderChildButtons()}
           <Motion style={mainButtonRotation}>
             {({rotate}) =>
@@ -212,4 +212,4 @@ class PokemonButton extends Component {
   }
 }
 
-export default PokemonButton;
+export default PokeballButton;

@@ -7,9 +7,9 @@ import {FixPokemonNameForImages} from '../Helpers/Helpers';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
-import './Pokemon.css';
+import './PokemonCard.css';
 
-class Pokemon extends Component {
+class PokemonCard extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -33,13 +33,8 @@ class Pokemon extends Component {
     const pokemon = this.props.pokemon;
     const pokemonFix = FixPokemonNameForImages(pokemon);
 
-    let singleBodyClassName = "pokemon-single-container";
-    if (bShowData) {
-      singleBodyClassName += " pokemon-single-container-open"
-    };
-
     return (
-      <div className={singleBodyClassName}>
+      <div className={(!bShowData) ? "pokemon-single-container" : "pokemon-single-container pokemon-single-container-open"}>
         <div className="pokemon-single-header">
           <LazyLoad
             className="pokemon-single-header-lazyload"
@@ -58,15 +53,11 @@ class Pokemon extends Component {
         </Collapse>
 
         <div className="pokemon-expand" onClick={() => this.handleClick()}>
-          {
-            (!bShowData) ?
-            <FontAwesomeIcon icon="chevron-circle-down" /> :
-            <FontAwesomeIcon icon="chevron-circle-up" />
-          }
+            <FontAwesomeIcon icon="chevron-circle-down" className={(!bShowData) ? "rotating-button-close" : "rotating-button-open"}/>
         </div>
       </div>
     );
   }
 }
 
-export default Pokemon;
+export default PokemonCard;

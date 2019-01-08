@@ -1,4 +1,9 @@
 .circular-button-container {
+  width: 64px;
+  height: 64px;
+}
+
+.circular-button {
   position: fixed;
   bottom: 10px;
   left: 50%;
@@ -58,13 +63,4 @@ position: relative;
   right: 0;
   background-color: rgba(0, 0, 0, 0.7);
   z-index: 100;
-}
-
-.circular-button-border {
-  position: fixed;
-  width: 100%;
-  height: 40px;
-  left: 0;
-  bottom: 0px;
-  background-color: #DA1213;
 }
